@@ -1,0 +1,94 @@
+antivirus_name,platform,test_period,protection,performance,usability,version
+Avast Free Antivirus,Windows,2026-04,6.0,6.0,6.0,26.2 & 26.3
+AVG Antivirus Free,Windows,2026-04,6.0,6.0,6.0,26.2 & 26.3
+Avira Internet Security for Windows,Windows,2026-04,6.0,5.5,6.0,1.1
+Bitdefender Total Security,Windows,2026-04,6.0,6.0,6.0,27.0
+EnigmaSoft SpyHunter,Windows,2026-04,4.5,6.0,3.5,5.21
+ESET Security Ultimate,Windows,2026-04,6.0,5.5,6.0,19.0 & 19.1
+F-Secure Total,Windows,2026-04,6.0,5.5,6.0,26.2 & 26.3
+K7 Total Security,Windows,2026-04,5.0,5.5,6.0,16.0
+Kaspersky Premium,Windows,2026-04,6.0,6.0,6.0,21.24
+Malwarebytes Premium,Windows,2026-04,5.5,6.0,6.0,5.5
+McAfee Total Protection,Windows,2026-04,6.0,6.0,6.0,1.36
+Microsoft Defender Antivirus,Windows,2026-04,6.0,6.0,6.0,4.18
+Norton 360,Windows,2026-04,6.0,6.0,6.0,26.2 & 26.3
+TotalAV Antivirus Pro,Windows,2026-04,6.0,6.0,6.0,6.6
+Avast Free Antivirus,Windows,2026-02,6.0,6.0,6.0,25.12
+AVG Antivirus Free,Windows,2026-02,6.0,5.5,6.0,25.12
+Avira Internet Security for Windows,Windows,2026-02,6.0,4.5,6.0,1.1
+Bitdefender Total Security,Windows,2026-02,6.0,6.0,6.0,27.0
+ESET Security Ultimate,Windows,2026-02,6.0,5.5,6.0,19.0
+F-Secure Total,Windows,2026-02,6.0,6.0,6.0,25.11/26.1
+G Data Internet Security,Windows,2026-02,6.0,6.0,6.0,25.5
+K7 Total Security,Windows,2026-02,5.5,6.0,6.0,16.0
+Kaspersky Premium,Windows,2026-02,6.0,6.0,6.0,21.23
+McAfee Total Protection,Windows,2026-02,6.0,6.0,6.0,1.35
+Microsoft Defender Antivirus,Windows,2026-02,6.0,6.0,6.0,4.18
+Norton 360,Windows,2026-02,6.0,6.0,6.0,25.12
+Avast Free Antivirus,Windows,2025-12,6.0,6.0,6.0,25.12
+AVG Antivirus Free,Windows,2025-12,6.0,6.0,6.0,25.12
+Bitdefender Total Security,Windows,2025-12,6.0,6.0,6.0,27.0
+ESET Security Ultimate,Windows,2025-12,6.0,5.5,6.0,19.0
+Kaspersky Premium,Windows,2025-12,6.0,6.0,6.0,21.23
+McAfee Total Protection,Windows,2025-12,6.0,6.0,6.0,1.35
+Microsoft Defender Antivirus,Windows,2025-12,6.0,6.0,6.0,4.18
+Norton 360,Windows,2025-12,6.0,6.0,6.0,25.12
+Avast Free Antivirus,Windows,2025-10,6.0,6.0,6.0,25.12
+AVG Antivirus Free,Windows,2025-10,6.0,6.0,6.0,25.12
+Bitdefender Total Security,Windows,2025-10,6.0,6.0,6.0,27.0
+ESET Security Ultimate,Windows,2025-10,6.0,5.5,6.0,19.0
+Kaspersky Premium,Windows,2025-10,6.0,6.0,6.0,21.23
+Microsoft Defender Antivirus,Windows,2025-10,6.0,6.0,6.0,4.18
+Norton 360,Windows,2025-10,6.0,6.0,6.0,25.12
+Avast Free Antivirus,Windows,2025-08,6.0,6.0,6.0,25.12
+AVG Antivirus Free,Windows,2025-08,6.0,6.0,6.0,25.12
+Bitdefender Total Security,Windows,2025-08,6.0,6.0,6.0,27.0
+ESET Security Ultimate,Windows,2025-08,6.0,5.5,6.0,19.0
+Kaspersky Premium,Windows,2025-08,6.0,6.0,6.0,21.23
+Microsoft Defender Antivirus,Windows,2025-08,6.0,6.0,6.0,4.18
+Norton 360,Windows,2025-08,6.0,6.0,6.0,25.12
+Avast Security,macOS,2026-03,6.0,6.0,6.0,--
+AVG AntiVirus for Mac,macOS,2026-03,6.0,6.0,6.0,--
+Avira Security for Mac,macOS,2026-03,6.0,6.0,6.0,--
+Bitdefender Virus Scanner for Mac,macOS,2026-03,6.0,6.0,6.0,--
+ESET Cyber Security for Mac,macOS,2026-03,6.0,6.0,6.0,--
+Intego Mac Internet Security X9,macOS,2026-03,6.0,6.0,6.0,--
+Kaspersky Premium for Mac,macOS,2026-03,6.0,6.0,6.0,--
+Norton 360 for Mac,macOS,2026-03,6.0,6.0,6.0,--
+Avast Security,macOS,2025-12,6.0,6.0,6.0,--
+AVG AntiVirus for Mac,macOS,2025-12,6.0,6.0,6.0,--
+Bitdefender Virus Scanner for Mac,macOS,2025-12,6.0,6.0,6.0,--
+ESET Cyber Security for Mac,macOS,2025-12,6.0,6.0,6.0,--
+Kaspersky Premium for Mac,macOS,2025-12,6.0,6.0,6.0,--
+Norton 360 for Mac,macOS,2025-12,6.0,6.0,6.0,--
+Avast Security,macOS,2025-09,6.0,6.0,6.0,--
+Bitdefender Virus Scanner for Mac,macOS,2025-09,6.0,6.0,6.0,--
+ESET Cyber Security for Mac,macOS,2025-09,6.0,6.0,6.0,--
+Kaspersky Premium for Mac,macOS,2025-09,6.0,6.0,6.0,--
+Norton 360 for Mac,macOS,2025-09,6.0,6.0,6.0,--
+Avast Mobile Security,Android,2026-03,6.0,6.0,6.0,--
+AVG AntiVirus Free,Android,2026-03,6.0,6.0,6.0,--
+Avira Antivirus Security,Android,2026-03,6.0,6.0,6.0,--
+Bitdefender Mobile Security,Android,2026-03,6.0,6.0,6.0,--
+ESET Mobile Security,Android,2026-03,6.0,6.0,6.0,--
+Kaspersky Premium for Android,Android,2026-03,6.0,6.0,6.0,--
+McAfee Mobile Security,Android,2026-03,6.0,6.0,6.0,--
+Norton 360 for Android,Android,2026-03,6.0,6.0,6.0,--
+Avast Mobile Security,Android,2026-01,6.0,6.0,6.0,--
+AVG AntiVirus Free,Android,2026-01,6.0,6.0,6.0,--
+Bitdefender Mobile Security,Android,2026-01,6.0,6.0,6.0,--
+ESET Mobile Security,Android,2026-01,6.0,6.0,6.0,--
+Kaspersky Premium for Android,Android,2026-01,6.0,6.0,6.0,--
+Norton 360 for Android,Android,2026-01,6.0,6.0,6.0,--
+Avast Mobile Security,Android,2025-11,6.0,6.0,6.0,--
+AVG AntiVirus Free,Android,2025-11,6.0,6.0,6.0,--
+Bitdefender Mobile Security,Android,2025-11,6.0,6.0,6.0,--
+ESET Mobile Security,Android,2025-11,6.0,5.5,6.0,--
+Kaspersky Premium for Android,Android,2025-11,6.0,6.0,6.0,--
+Norton 360 for Android,Android,2025-11,6.0,6.0,6.0,--
+Avast Mobile Security,Android,2025-09,6.0,6.0,6.0,--
+AVG AntiVirus Free,Android,2025-09,6.0,6.0,6.0,--
+Bitdefender Mobile Security,Android,2025-09,6.0,6.0,6.0,--
+ESET Mobile Security,Android,2025-09,6.0,5.5,6.0,--
+Kaspersky Premium for Android,Android,2025-09,6.0,6.0,6.0,--
+Norton 360 for Android,Android,2025-09,6.0,6.0,6.0,--

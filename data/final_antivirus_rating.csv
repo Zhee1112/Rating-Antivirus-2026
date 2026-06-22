@@ -1,0 +1,16 @@
+antivirus_name,platform,protection,performance,usability,periods_tested,rating_score,rank
+Avast Free Antivirus,Windows,6.0,6.0,6.0,5,1.0,1
+Bitdefender Total Security,Windows,6.0,6.0,6.0,5,1.0,1
+G Data Internet Security,Windows,6.0,6.0,6.0,1,1.0,1
+TotalAV Antivirus Pro,Windows,6.0,6.0,6.0,1,1.0,1
+Microsoft Defender Antivirus,Windows,6.0,6.0,6.0,5,1.0,1
+Norton 360,Windows,6.0,6.0,6.0,5,1.0,1
+McAfee Total Protection,Windows,6.0,6.0,6.0,3,1.0,1
+Kaspersky Premium,Windows,6.0,6.0,6.0,5,1.0,1
+AVG Antivirus Free,Windows,6.0,5.9,6.0,5,0.9818004108154131,9
+F-Secure Total,Windows,6.0,5.75,6.0,2,0.9555289999171839,10
+ESET Security Ultimate,Windows,6.0,5.5,6.0,5,0.9144198149278034,11
+Avira Internet Security for Windows,Windows,6.0,5.0,6.0,2,0.8417477396673742,12
+Malwarebytes Premium,Windows,5.5,6.0,6.0,1,0.786213897328405,13
+K7 Total Security,Windows,5.25,5.75,6.0,2,0.6914502675061456,14
+EnigmaSoft SpyHunter,Windows,4.5,6.0,3.5,1,0.15825226033262588,15
