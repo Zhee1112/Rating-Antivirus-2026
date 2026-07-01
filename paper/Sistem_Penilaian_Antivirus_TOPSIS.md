@@ -28,19 +28,19 @@ Antivirus software evaluation is a critical issue considering the increasing cyb
 
 ### 1.1 Latar Belakang
 
-Pertumbuhan pesat teknologi digital telah membawa konsekuensi langsung pada meningkatnya frekuensi dan kompleksitas serangan siber. AV-TEST Institute mencatat bahwa lebih dari 1,5 miliar ancaman malware teridentifikasi secara global sepanjang tahun 2023, dengan tren yang terus meningkat dari tahun ke tahun [1]. Ancaman ini tidak lagi terbatas pada satu platform saja—Windows, macOS, dan Android semuanya menjadi target serangan yang memerlukan perlindungan khusus [2].
+Pertumbuhan pesat teknologi digital telah membawa konsekuensi langsung pada meningkatnya frekuensi dan kompleksitas serangan siber. Lebih dari 2.200 serangan siber terjadi setiap hari secara global, dengan ransomware mencakup 68% dari seluruh ancaman yang terdeteksi (DemandSage, 2026). Kerugian global akibat kejahatan siber mencapai $16.6 miliar pada tahun 2024 saja (FBI, 2025). Ancaman ini tidak lagi terbatas pada satu platform—Windows, macOS, dan Android semuanya menjadi target serangan yang memerlukan perlindungan khusus (Alhakami, 2024).
 
-Dalam ekosistem keamanan siber modern, perangkat lunak antivirus memainkan peran sentral sebagai lapisan pertahanan pertama [3]. Namun, pasar antivirus menunjukkan fragmentasi yang signifikan: AV-TEST Institute secara berkala menguji lebih dari 40 produk antivirus untuk berbagai platform, masing-masing dengan kekuatan dan kelemahan yang berbeda [1]. Setiap vendor mengklaim produknya sebagai yang terbaik, namun klaim-klaim tersebut sering kali tidak didukung oleh data objektif dan terstandarisasi [4].
+Dalam ekosistem keamanan siber modern, perangkat lunak antivirus memainkan peran sentral sebagai lapisan pertahanan pertama (Chaube et al., 2024). Namun, pasar antivirus menunjukkan fragmentasi yang signifikan: AV-TEST Institute secara berkala menguji lebih dari 40 produk antivirus untuk berbagai platform, masing-masing dengan kekuatan dan kelemahan yang berbeda (AV-TEST Institute, 2026). Setiap vendor mengklaim produknya sebagai yang terbaik, namun klaim-klaim tersebut sering kali tidak didukung oleh data objektif dan terstandarisasi (Panahi & Abdulvahitoğlu, 2026).
 
-Beberapa insiden keamanan yang mengguncang ekosistem digital dalam beberapa tahun terakhir menunjukkan betapa kritisnya pemilihan solusi keamanan yang tepat. Ransomware seperti WannaCry dan NotPetya telah menyebabkan kerugian miliaran dolar secara global [5]. Sementara itu, serangan zero-day yang semakin canggih menuntut antivirus memiliki kemampuan deteksi yang lebih baik [6]. Dalam konteks ini, pengguna memerlukan kerangka kerja objektif untuk membandingkan dan memilih produk antivirus yang paling sesuai dengan kebutuhan mereka.
+Beberapa insiden keamanan yang mengguncang ekosistem digital dalam beberapa tahun terakhir menunjukkan betapa kritisnya pemilihan solusi keamanan yang tepat. Beaman et al. (2021) mencatat bahwa ransomware telah berevolusi dari sekadar enkripsi data menjadi eksploitasi data ganda (double extortion), dengan kerugian yang terus meningkat dari tahun ke tahun. Serangan zero-day yang semakin canggih menuntut antivirus memiliki kemampuan deteksi yang lebih baik (Botacin et al., 2020). Dalam konteks ini, pengguna memerlukan kerangka kerja objektif untuk membandingkan dan memilih produk antivirus yang paling sesuai dengan kebutuhan mereka.
 
-Salah satu tantangan utama yang dihadapi pengguna adalah banyaknya kriteria yang perlu dipertimbangkan secara bersamaan. Protection (perlindungan) terhadap malware, Performance (kinerja) terhadap sistem, dan Usability (kemudahan penggunaan) merupakan dimensi evaluasi yang saling berkaitan namun kadang bertentangan [4]. Pendekatan konvensional berbasis klaim vendor atau testimonial pengguna tidak memberikan dasar yang objektif untuk pengambilan keputusan [7].
+Data dari Security.org (2026) menunjukkan bahwa 34% penduduk Amerika Serikat masih menggunakan perangkat tanpa perlindungan antivirus, sementara hanya 25% pengguna yang menganggap antivirus "sangat efektif". Temuan ini mengindikasikan adanya kesenjangan antara kesadaran akan pentingnya keamanan dan tindakan nyata dalam pemilihan solusi antivirus yang tepat. Botacin et al. (2020) menambahkan bahwa tantangan utama dalam evaluasi antivirus adalah kompleksitas kriteria yang saling berkaitan—Protection (perlindungan), Performance (kinerja), dan Usability (kemudahan penggunaan)—yang kadang bertentangan satu sama lain.
 
-Pendekatan Multi-Criteria Decision Making (MCDM) menawarkan solusi yang tepat untuk mengatasi permasalahan ini. MCDM merupakan kumpulan metode yang dirancang untuk membantu pengambil keputusan dalam situasi yang melibatkan beberapa kriteria yang mungkin bertentangan [8]. Salah satu metode MCDM yang paling banyak digunakan dan telah terbukti efektif adalah TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) yang dikembangkan oleh Hwang dan Yoon pada tahun 1981 [9]. TOPSIS bekerja dengan prinsip bahwa solusi ideal terbaik memiliki jarak terpendek dari solusi ideal positif dan jarak terjauh dari solusi ideal negatif [10].
+Pendekatan konvensional berbasis klaim vendor atau testimonial pengguna tidak memberikan dasar yang objektif untuk pengambilan keputusan (Nur et al., 2024). Oleh karena itu, diperlukan pendekatan sistematis berbasis Multi-Criteria Decision Making (MCDM) yang mampu mengintegrasikan berbagai kriteria evaluasi secara simultan. MCDM merupakan kumpulan metode yang dirancang untuk membantu pengambil keputusan dalam situasi yang melibatkan beberapa kriteria yang mungkin bertentangan (Shih & Olson, 2022). Salah satu metode MCDM yang paling banyak digunakan dan telah terbukti efektif adalah TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) yang dikembangkan oleh Hwang dan Yoon (1981).
 
-Beberapa penelitian terdahulu telah berhasil menerapkan metode TOPSIS dalam berbagai domain evaluasi. Panahi dan Abdulvahitoğlu (2026) mengembangkan pendekatan berbasis Borda untuk menilai produk antivirus [4]. Madanchian dan Taherdoost (2023) memberikan panduan komprehensif tentang implementasi TOPSIS dalam konteks MCDM [9]. Namun, penelitian yang mengkombinasikan evaluasi multi-platform dengan analisis sensitivitas mendalam masih terbatas, khususnya dalam konteks perbandingan produk antivirus lintas Windows, macOS, dan Android.
+Untuk mendukung proses pengambilan data secara efisien dan terstandarisasi, penelitian ini menggunakan pendekatan web scraping untuk mengumpulkan data penilaian dari AV-TEST Institute. Web scraping merupakan teknik ekstraksi data otomatis dari situs web yang telah banyak digunakan dalam penelitian untuk mengumpulkan data dari berbagai sumber online (Khder, 2021; Ertz et al., 2021). Teknik ini memungkinkan pengumpulan data secara konsisten dan dapat direproduksi, sehingga menghasilkan dataset yang komprehensif untuk analisis lebih lanjut.
 
-Data penilaian yang digunakan dalam penelitian ini diperoleh dari AV-TEST Institute, lembaga pengujian independen terkemuka yang secara berkala mengevaluasi produk antivirus [1]. Data dikumpulkan melalui proses pengambilan data otomatis (web scraping) dari situs resmi AV-TEST untuk periode 2023-2026, mencakup 485 data pengujian dari 29+ produk antivirus lintas tiga platform.
+Beberapa penelitian terdahulu telah berhasil menerapkan metode TOPSIS dalam berbagai domain evaluasi. Panahi dan Abdulvahitoğlu (2026) mengembangkan pendekatan berbasis Borda untuk menilai produk antivirus. Madanchian dan Taherdoost (2023) memberikan panduan komprehensif tentang implementasi TOPSIS dalam konteks MCDM. Namun, penelitian yang mengkombinasikan evaluasi multi-platform dengan analisis sensitivitas mendalam masih terbatas, khususnya dalam konteks perbandingan produk antivirus lintas Windows, macOS, dan Android.
 
 ### 1.2 Rumusan Masalah
 
@@ -67,7 +67,7 @@ Manfaat yang diharapkan dari penelitian ini meliputi:
 
 ### 1.5 Struktur Paper
 
-Paper ini disusun dengan struktur sebagai berikut: Bab 1 berisi pendahuluan yang mencakup latar belakang, rumusan masalah, tujuan penelitian, dan manfaat penelitian. Bab 2 berisi tinjauan pustaka yang membahas konsep dasar TOPSIS, MCDM, dan evaluasi antivirus. Bab 3 berisi metodologi penelitian yang mencakup desain sistem, dataset, dan implementasi algoritma. Bab 4 berisi hasil dan pembahasan yang mencakup hasil pengujian dan analisis sensitivitas. Bab 5 berisi kesimpulan dan saran untuk penelitian selanjutnya.
+Paper ini disusun dengan struktur sebagai berikut: Bab 1 berisi pendahuluan yang mencakup latar belakang, rumusan masalah, tujuan penelitian, dan manfaat penelitian. Bab 2 berisi tinjauan pustaka yang membahas konsep dasar TOPSIS, MCDM, evaluasi antivirus, dan web scraping. Bab 3 berisi metodologi penelitian yang mencakup desain sistem, dataset, dan implementasi algoritma. Bab 4 berisi hasil dan pembahasan yang mencakup hasil pengujian dan analisis sensitivitas. Bab 5 berisi kesimpulan dan saran untuk penelitian selanjutnya.
 
 ---
 
@@ -75,19 +75,19 @@ Paper ini disusun dengan struktur sebagai berikut: Bab 1 berisi pendahuluan yang
 
 ### 2.1 Multi-Criteria Decision Making (MCDM)
 
-Multi-Criteria Decision Making (MCDM) adalah kumpulan metode yang digunakan untuk membantu pengambil keputusan dalam situasi yang melibatkan beberapa kriteria yang mungkin bertentangan [8]. Dalam banyak keputusan nyata, terdapat berbagai kriteria yang perlu dipertimbangkan secara bersamaan. MCDM menyediakan kerangka kerja yang sistematis untuk mengevaluasi dan membandingkan alternatif berdasarkan beberapa kriteria tersebut [11].
+Multi-Criteria Decision Making (MCDM) adalah kumpulan metode yang digunakan untuk membantu pengambil keputusan dalam situasi yang melibatkan beberapa kriteria yang mungkin bertentangan (Shih & Olson, 2022). Dalam banyak keputusan nyata, terdapat berbagai kriteria yang perlu dipertimbangkan secara bersamaan. MCDM menyediakan kerangka kerja yang sistematis untuk mengevaluasi dan membandingkan alternatif berdasarkan beberapa kriteria tersebut (Velasquez & Hester, 2013).
 
-Menurut Kumar (2025), MCDM telah menjadi salah satu bidang yang paling aktif dalam penelitian operasional dan pengambilan keputusan, dengan ribuan publikasi yang diterbitkan setiap tahun [12]. Perkembangan MCDM tidak terlepas dari kompleksitas masalah pengambilan keputusan di dunia nyata yang sering kali melibatkan banyak faktor yang saling berkaitan.
+Menurut Kumar (2025), MCDM telah menjadi salah satu bidang yang paling aktif dalam penelitian operasional dan pengambilan keputusan, dengan ribuan publikasi yang diterbitkan setiap tahun. Perkembangan MCDM tidak terlepas dari kompleksitas masalah pengambilan keputusan di dunia nyata yang sering kali melibatkan banyak faktor yang saling berkaitan.
 
-Metode-metode MCDM dapat diklasifikasikan menjadi beberapa kategori, antara lain: metode berbasis penilaian (scoring methods), metode berbasis perankingan (ranking methods), metode berbasis kompensasi (compensatory methods), dan metode berbasis kombinasi [11]. Beberapa metode MCDM yang paling banyak digunakan meliputi AHP (Analytical Hierarchy Process), TOPSIS, ELECTRE, dan PROMETHEE.
+Metode-metode MCDM dapat diklasifikasikan menjadi beberapa kategori, antara lain: metode berbasis penilaian (scoring methods), metode berbasis perankingan (ranking methods), metode berbasis kompensasi (compensatory methods), dan metode berbasis kombinasi (Velasquez & Hester, 2013). Beberapa metode MCDM yang paling banyak digunakan meliputi AHP (Analytical Hierarchy Process), TOPSIS, ELECTRE, dan PROMETHEE.
 
 ### 2.2 TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)
 
-TOPSIS pertama kali dikembangkan oleh Hwang dan Yoon pada tahun 1981 [9]. Metode ini didasarkan pada konsep bahwa solusi ideal terbaik memiliki jarak terpendek dari solusi ideal positif (A+) dan jarak terjauh dari solusi ideal negatif (A-) [10].
+TOPSIS pertama kali dikembangkan oleh Hwang dan Yoon pada tahun 1981. Metode ini didasarkan pada konsep bahwa solusi ideal terbaik memiliki jarak terpendek dari solusi ideal positif (A+) dan jarak terjauh dari solusi ideal negatif (Yoon, 1987).
 
-Menurut Madanchian dan Taherdoost (2023), TOPSIS merupakan salah satu metode MCDM yang paling banyak digunakan karena kemudahannya dalam implementasi dan interpretasi hasil [9]. Metode ini telah diterapkan dalam berbagai bidang, mulai dari manajemen rantai pasokan, pengambilan keputusan investasi, hingga evaluasi kinerja.
+Menurut Madanchian dan Taherdoost (2023), TOPSIS merupakan salah satu metode MCDM yang paling banyak digunakan karena kemudahannya dalam implementasi dan interpretasi hasil. Metode ini telah diterapkan dalam berbagai bidang, mulai dari manajemen rantai pasokan, pengambilan keputusan investasi, hingga evaluasi kinerja.
 
-Langkah-langkah utama dalam algoritma TOPSIS meliputi [9, 10]:
+Langkah-langkah utama dalam algoritma TOPSIS meliputi (Madanchian & Taherdoost, 2023; Yoon, 1987):
 
 1. **Normalisasi Matriks Keputusan:** Mengubah matriks keputusan ke dalam skala yang sebanding menggunakan normalisasi vektor.
 2. **Pembentukan Matriks Ternormalisasi Berbobot:** Mengalikan matriks ternormalisasi dengan vektor bobot kriteria.
@@ -95,7 +95,7 @@ Langkah-langkah utama dalam algoritma TOPSIS meliputi [9, 10]:
 4. **Menghitung Jarak Euclidean:** Menghitung jarak setiap alternatif dari solusi ideal positif dan negatif.
 5. **Menghitung Koefisien Proximiti:** Menentukan perankingan berdasarkan kedekatan relatif terhadap solusi ideal.
 
-Keunggulan TOPSIS dibandingkan metode MCDM lainnya antara lain [12]:
+Keunggulan TOPSIS dibandingkan metode MCDM lainnya antara lain (Kumar et al., 2023):
 - Mampu menangani jumlah kriteria dan alternatif yang besar
 - Memberikan hasil perankingan yang unik
 - Transparan dan mudah diinterpretasi
@@ -103,19 +103,39 @@ Keunggulan TOPSIS dibandingkan metode MCDM lainnya antara lain [12]:
 
 ### 2.3 Evaluasi Perangkat Lunak Antivirus
 
-Evaluasi perangkat lunak antivirus merupakan proses yang kompleks karena melibatkan berbagai aspek yang perlu dipertimbangkan. AV-TEST Institute, sebagai salah satu lembaga pengujian independen terkemuka, menggunakan tiga kriteria utama dalam evaluasi antivirus [1]:
+Evaluasi perangkat lunak antivirus merupakan proses yang kompleks karena melibatkan berbagai aspek yang perlu dipertimbangkan. AV-TEST Institute, sebagai salah satu lembaga pengujian independen terkemuka, menggunakan tiga kriteria utama dalam evaluasi antivirus (AV-TEST Institute, 2026):
 
 1. **Protection (Perlindungan):** Kemampuan antivirus dalam mendeteksi dan mencegah serangan malware, termasuk virus, worm, Trojan, ransomware, dan jenis malware lainnya.
 2. **Performance (Kinerja):** Pengaruh antivirus terhadap kinerja sistem, termasuk waktu boot, kecepatan menjalankan aplikasi, dan penggunaan sumber daya.
 3. **Usability (Kemudahan Penggunaan):** Aspek ergonomis dan kemudahan penggunaan antivirus, termasuk antarmuka pengguna, jumlah alarm palsu, dan fitur-fitur tambahan.
 
-Skor penilaian AV-TEST menggunakan rentang 1-6, di mana 6 merupakan skor tertinggi [1]. Pendekatan ini memberikan standar yang terstandarisasi untuk membandingkan berbagai produk antivirus.
+Skor penilaian AV-TEST menggunakan rentang 1-6, di mana 6 merupakan skor tertinggi (AV-TEST Institute, 2026). Pendekatan ini memberikan standar yang terstandarisasi untuk membandingkan berbagai produk antivirus.
 
-Panahi dan Abdulvahitoğlu (2026) mengembangkan pendekatan berbasis Borda untuk menilai beberapa produk antivirus menggunakan metode MCDM [4]. Penelitian mereka menunjukkan bahwa pendekatan MCDM dapat memberikan hasil yang lebih objektif dan terstandarisasi dibandingkan dengan pendekatan konvensional.
+Botacin et al. (2020) mengidentifikasi tantangan utama dalam evaluasi antivirus, termasuk keterbatasan metode pengujian konvensional dan perlunya metrik tambahan seperti waktu respons dan frekuensi regresi. Panahi dan Abdulvahitoğlu (2026) mengembangkan pendekatan berbasis Borda untuk menilai beberapa produk antivirus menggunakan metode MCDM, yang menunjukkan bahwa pendekatan MCDM dapat memberikan hasil yang lebih objektif dan terstandarisasi dibandingkan dengan pendekatan konvensional.
 
-### 2.4 Implementasi Python untuk MCDM
+Nur et al. (2024) menerapkan metode Fuzzy Analytic Hierarchy Process (FAHP) untuk pemilihan antivirus komputer, yang membuktikan efektivitas pendekatan MCDM dalam domain ini. Penelitian mereka menunjukkan bahwa Kaspersky Antivirus menempati peringkat teratas berdasarkan evaluasi multi-kriteria.
 
-Python telah menjadi bahasa pemrograman yang paling banyak digunakan untuk implementasi metode MCDM karena beberapa alasan [13]:
+### 2.4 Tantangan Pemilihan Antivirus
+
+Pemilihan antivirus yang tepat merupakan tantangan signifikan bagi pengguna. Data dari Security.org (2026) menunjukkan bahwa 45% non-pengguna antivirus menganggap biaya terlalu mahal, sementara 57% khawatir vendor dapat menyalahgunakan data pribadi mereka. Temuan ini mengindikasikan adanya hambatan nyata dalam adopsi solusi keamanan.
+
+Beaman et al. (2021) mencatat bahwa evolusi ransomware dari enkripsi data menjadi eksploitasi data ganda telah meningkatkan kompleksitas evaluasi antivirus. Serangan semakin canggih dan beragam, sehingga pengguna memerlukan informasi yang akurat dan terkini untuk membuat keputusan yang tepat.
+
+National Cyber Security Centre (NCSC) UK (2021) merekomendasikan bahwa organisasi perlu mempertimbangkan beberapa faktor dalam pemilihan antivirus, termasuk jenis ancaman yang dihadapi, sumber daya sistem yang tersedia, dan kebutuhan keamanan spesifik. Panduan ini menekankan pentingnya evaluasi objektif berdasarkan data empiris daripada klaim pemasaran.
+
+### 2.5 Web Scraping untuk Pengumpulan Data
+
+Web scraping merupakan teknik ekstraksi data otomatis dari situs web yang memainkan peran penting dalam pengumpulan data untuk penelitian, analisis, dan otomasi (Khder, 2021). Dalam konteks penelitian ini, web scraping digunakan untuk mengumpulkan data penilaian antivirus dari situs resmi AV-TEST Institute secara konsisten dan dapat direproduksi.
+
+Ertz et al. (2021) dalam literatur review mereka menjelaskan bahwa web scraping telah menjadi pendekatan fundamental dalam big data analytics, memungkinkan organisasi untuk mengekstrak informasi berguna dari berbagai sumber online. Teknik ini mencakup berbagai metode mulai dari XPath, CSS selectors, hingga regular expressions.
+
+Weerasinghe (2024) meninjau penggunaan artificial intelligence dalam web scraping, yang menunjukkan peningkatan efisiensi dan akurasi dalam ekstraksi data dari situs web dinamis. Sementara itu, survey oleh IEEE (2024) tentang web crawling dan scraping memberikan gambaran komprehensif tentang perkembangan teknik dan tantangan dalam pengumpulan data web.
+
+Untuk implementasi dalam Python, BeautifulSoup merupakan salah satu library yang paling banyak digunakan untuk parsing HTML (Mitchell, 2015). Library ini sering dikombinasikan dengan requests untuk pengambilan halaman web, menghasilkan pipeline scraping yang efisien dan andal.
+
+### 2.6 Implementasi Python untuk MCDM
+
+Python telah menjadi bahasa pemrograman yang paling banyak digunakan untuk implementasi metode MCDM karena beberapa alasan (Gitelman & Kozlovskaya, 2023):
 - Tersedianya library numerik yang kuat seperti NumPy dan pandas
 - Komunitas yang aktif dan dokumentasi yang lengkap
 - Kemudahan dalam pengembangan prototipe dan visualisasi data
@@ -124,6 +144,7 @@ Untuk implementasi TOPSIS dalam Python, library yang umum digunakan antara lain:
 - **NumPy:** Untuk operasi matriks dan vektoral
 - **pandas:** Untuk manipulasi dan analisis data
 - **matplotlib** dan **seaborn:** Untuk visualisasi hasil
+- **BeautifulSoup:** Untuk web scraping dan ekstraksi data
 
 ---
 
@@ -201,9 +222,9 @@ Alur kerja pipeline sistem penilaian mengikuti langkah-langkah berikut:
 
 #### 3.2.1 Sumber Data
 
-Dataset yang digunakan dalam penelitian ini diperoleh dari AV-TEST Institute [1], lembaga pengujian independen yang secara berkala mengevaluasi produk antivirus untuk berbagai platform. Data dikumpulkan melalui proses pengambilan data otomatis (web scraping) menggunakan bahasa pemrograman Python dengan library BeautifulSoup. Proses scraping dilakukan terhadap situs resmi AV-TEST untuk periode pengujian 2023-2026.
+Dataset yang digunakan dalam penelitian ini diperoleh dari AV-TEST Institute, lembaga pengujian independen yang secara berkala mengevaluasi produk antivirus untuk berbagai platform (AV-TEST Institute, 2026). Data dikumpulkan melalui proses pengambilan data otomatis (web scraping) menggunakan bahasa pemrograman Python dengan library BeautifulSoup, sebagaimana direkomendasikan oleh Khder (2021) dan Ertz et al. (2021). Proses scraping dilakukan terhadap situs resmi AV-TEST untuk periode pengujian 2023-2026.
 
-AV-TEST Institute merupakan salah satu lembaga pengujian independen terkemuka yang menyediakan data penilaian objektif untuk perangkat lunak keamanan [1]. Laporan pengujian mereka dipublikasikan secara berkala dan diakui secara internasional sebagai standar referensi dalam evaluasi produk antivirus.
+AV-TEST Institute merupakan salah satu lembaga pengujian independen terkemuka yang menyediakan data penilaian objektif untuk perangkat lunak keamanan (AV-TEST Institute, 2026). Laporan pengujian mereka dipublikasikan secara berkala dan diakui secara internasional sebagai standar referensi dalam evaluasi produk antivirus.
 
 #### 3.2.2 Struktur Data
 
@@ -247,11 +268,11 @@ Distribusi data pengujian berdasarkan platform ditampilkan pada Tabel 3.
 
 ### 3.3 Algoritma TOPSIS
 
-Implementasi algoritma TOPSIS dalam penelitian ini mengikuti langkah-langkah standar sebagaimana diuraikan oleh Hwang dan Yoon [9].
+Implementasi algoritma TOPSIS dalam penelitian ini mengikuti langkah-langkah standar sebagaimana diuraikan oleh Hwang dan Yoon (1981).
 
 #### 3.3.1 Normalisasi Vektor
 
-Normalisasi vektor dilakukan untuk mengubah matriks keputusan ke dalam skala yang sebanding. Normalisasi menggunakan rumus berikut [9]:
+Normalisasi vektor dilakukan untuk mengubah matriks keputusan ke dalam skala yang sebanding. Normalisasi menggunakan rumus berikut (Hwang & Yoon, 1981):
 
 > **Persamaan (1):**
 >
@@ -264,19 +285,19 @@ Normalisasi vektor dilakukan untuk mengubah matriks keputusan ke dalam skala yan
 
 #### 3.3.2 Matriks Ternormalisasi Berbobot
 
-Matriks ternormalisasi dikalikan dengan vektor bobot kriteria menggunakan persamaan berikut [10]:
+Matriks ternormalisasi dikalikan dengan vektor bobot kriteria menggunakan persamaan berikut (Yoon, 1987):
 
 > **Persamaan (2):**
 >
 > $$v_{ij} = w_j \times r_{ij}$$
 >
-> Di mana:
+> Di Mana:
 > - $v_{ij}$ = nilai berbobot
 > - $w_j$ = bobot kriteria ke-j
 
 #### 3.3.3 Solusi Ideal
 
-Solusi ideal positif ($A^+$) dan solusi ideal negatif ($A^-$) ditentukan berdasarkan tipe kriteria [9]:
+Solusi ideal positif ($A^+$) dan solusi ideal negatif ($A^-$) ditentukan berdasarkan tipe kriteria (Hwang & Yoon, 1981):
 
 > **Persamaan (3):**
 >
@@ -288,7 +309,7 @@ Solusi ideal positif ($A^+$) dan solusi ideal negatif ($A^-$) ditentukan berdasa
 
 #### 3.3.4 Jarak Euclidean
 
-Jarak setiap alternatif dari solusi ideal positif dan negatif dihitung menggunakan rumus jarak Euclidean [10]:
+Jarak setiap alternatif dari solusi ideal positif dan negatif dihitung menggunakan rumus jarak Euclidean (Yoon, 1987):
 
 > **Persamaan (4):**
 >
@@ -296,13 +317,13 @@ Jarak setiap alternatif dari solusi ideal positif dan negatif dihitung menggunak
 
 #### 3.3.5 Koefisien Proximiti
 
-Koefisien proximiti ($C_i$) menunjukkan kedekatan relatif setiap alternatif terhadap solusi ideal [9]:
+Koefisien proximiti ($C_i$) menunjukkan kedekatan relatif setiap alternatif terhadap solusi ideal (Hwang & Yoon, 1981):
 
 > **Persamaan (5):**
 >
 > $$C_i = \frac{D_i^-}{D_i^+ + D_i^-}$$
 >
-> Di mana:
+> Di Mana:
 > - $0 \leq C_i \leq 1$
 > - Semakin besar $C_i$, semakin baik alternatif
 
@@ -325,7 +346,7 @@ Pembobotan kriteria dalam penelitian ini menggunakan empat skenario untuk analis
 
 ### 3.5 Analisis Sensitivitas
 
-Analisis sensitivitas dilakukan untuk menguji stabilitas perankingan terhadap perubahan bobot kriteria. Metode ini mengikuti pendekatan yang direkomendasikan oleh para peneliti sebelumnya [14]. Empat skenario pembobotan yang berbeda diterapkan untuk melihat pengaruhnya terhadap posisi perankingan setiap produk antivirus.
+Analisis sensitivitas dilakukan untuk menguji stabilitas perankingan terhadap perubahan bobot kriteria. Metode ini mengikuti pendekatan yang direkomendasikan oleh para peneliti sebelumnya (Sensitivity Analysis in MCDM, 2024). Empat skenario pembobotan yang berbeda diterapkan untuk melihat pengaruhnya terhadap posisi perankingan setiap produk antivirus.
 
 ### 3.6 Implementasi Sistem
 
@@ -527,33 +548,53 @@ Penelitian selanjutnya dapat menggunakan data dari lebih banyak sumber (misalnya
 
 ## DAFTAR PUSTAKA
 
-[1] AV-TEST Institute. (2026). *Test antivirus software for Windows 11 - The best antivirus protection for PC*. https://www.av-test.org/en/antivirus/home-windows/
+Alhakami, W. (2024). Evaluating modern intrusion detection methods in the face of Gen V multi-vector attacks with fuzzy AHP-TOPSIS. *PLOS ONE*, *19*(5), e0302559. https://doi.org/10.1371/journal.pone.0302559
 
-[2] Alhakami, W. (2024). Evaluating modern intrusion detection methods in the face of Gen V multi-vector attacks with fuzzy AHP-TOPSIS. *PLOS ONE*, 19(5), e0302559. https://doi.org/10.1371/journal.pone.0302559
+AV-TEST Institute. (2026). *Test antivirus software for Windows 11 - The best antivirus protection for PC*. https://www.av-test.org/en/antivirus/home-windows/
 
-[3] Chaube, S., Kumar, R., & Joshi, M. (2024). An overview of multi-criteria decision analysis and the applications of AHP and TOPSIS methods. *International Journal for Multidisciplinary Research (IJMEMS)*, 9(3), 581-615. https://doi.org/10.33889/IJMEMS.2024.9.3.030
+Beaman, C., Barkworth, A., Akande, T. D., Hakak, S., & Khan, M. K. (2021). Ransomware: Recent advances, analysis, challenges and future research directions. *Computers & Security*, *111*, 102490. https://doi.org/10.1016/j.cose.2021.102490
 
-[4] Panahi, U., & Abdulvahitoğlu, A. (2026). Ranking multiple antivirus software solutions: A Borda-based MCDM approach to performance evaluation. *Cluster Computing*. https://doi.org/10.1007/s10586-026-06155-0
+Botacin, M., Ceschin, F., De Geus, P., & Grégio, A. (2020). We need to talk about antiviruses: Challenges & pitfalls of AV evaluations. *Computers & Security*, *95*, 101859. https://doi.org/10.1016/j.cose.2020.101859
 
-[5] Madanchian, M., & Taherdoost, H. (2023). A comprehensive guide to the TOPSIS method for multi-criteria decision making. *Sustainable Social Development*, 1(1), 1-6. https://doi.org/10.54517/ssd.v1i1.2220
+Chaube, S., Kumar, R., & Joshi, M. (2024). An overview of multi-criteria decision analysis and the applications of AHP and TOPSIS methods. *International Journal for Multidisciplinary Research (IJMEMS)*, *9*(3), 581-615. https://doi.org/10.33889/IJMEMS.2024.9.3.030
 
-[6] Kumar, R. (2025). A comprehensive review of MCDM methods, applications, and emerging trends. *Decision Making Advances*, 3(1). https://doi.org/10.31181/dma31202569
+DemandSage. (2026). *83 Cybersecurity Statistics 2026 (Worldwide Data & Trends)*. https://www.demandsage.com/cybersecurity-statistics/
 
-[7] Kumar, A., Dhiman, G., Kaur, A., & Kaur, A. (2023). A review on TOPSIS method and its extensions for different applications with recent development. *Soft Computing*. https://doi.org/10.1007/s00500-023-09011-0
+Ertz, M., et al. (2021). Web scraping techniques and applications: A literature review. *SCRS Conference Proceedings on Intelligent Systems*, 381-394. https://doi.org/10.52458/978-93-91842-08-6-38
 
-[8] Shih, H.S., & Olson, D.L. (2022). *TOPSIS and its Extensions: A Distance-Based MCDM Approach*. Springer. https://doi.org/10.1007/978-3-031-09577-1
+Gitelman, L., & Kozlovskaya, E. (2023). *Multi-Criteria Analysis in the Energy Sector*. Springer.
 
-[9] Hwang, C.L., & Yoon, K. (1981). *Multiple Attribute Decision Making: Methods and Applications*. Springer-Verlag.
+Hwang, C. L., & Yoon, K. (1981). *Multiple Attribute Decision Making: Methods and Applications*. Springer-Verlag.
 
-[10] Yoon, K. (1987). A reconciliation among discrete compromise situations. *Journal of the Operational Research Society*, 38(3), 277-286.
+IEEE. (2024). Web crawling and scraping: A survey. *IEEE Conference Publication*. https://ieeexplore.ieee.org/document/10742709
 
-[11] Velasquez, M., & Hester, P.T. (2013). An analysis of multi-criteria decision making methods. *International Journal of Operations Research*, 10(2), 56-66.
+Khder, M. A. (2021). Web scraping or web crawling: State of art, techniques, approaches and application. *International Journal of Advanced Soft Computing and its Applications*, *13*(3), 144-168.
 
-[12] Zavadskas, E.K., Turskis, Z., & Kildienė, S. (2014). State of art surveys of overviews on MCDM/MADM methods. *Technological and Economic Development of Economy*, 20(1), 165-179.
+Kumar, A., Dhiman, G., Kaur, A., & Kaur, A. (2023). A review on TOPSIS method and its extensions for different applications with recent development. *Soft Computing*, *27*, 18011-18039. https://doi.org/10.1007/s00500-023-09011-0
 
-[13] Gitelman, L., & Kozlovskaya, E. (2023). *Multi-Criteria Analysis in the Energy Sector*. Springer.
+Kumar, R. (2025). A comprehensive review of MCDM methods, applications, and emerging trends. *Decision Making Advances*, *3*(1). https://doi.org/10.31181/dma31202569
 
-[14] Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis. (2024). *Expert Systems with Applications*, 237. https://doi.org/10.1016/j.eswa.2023.121660
+Madanchian, M., & Taherdoost, H. (2023). A comprehensive guide to the TOPSIS method for multi-criteria decision making. *Sustainable Social Development*, *1*(1), 1-6. https://doi.org/10.54517/ssd.v1i1.2220
+
+Mitchell, R. (2015). *Web Scraping with Python: Collecting More Data from the Modern Web*. O'Reilly Media.
+
+National Cyber Security Centre (NCSC) UK. (2021). *Antivirus and other security software*. https://www.ncsc.gov.uk/collection/device-security-guidance/policies-and-settings/antivirus-and-other-security-software
+
+Nur, N. F., et al. (2024). Multi-criteria decision making for computer antivirus selection using fuzzy AHP. *Journal of Mathematics and Computer Science*. https://journal.uitm.edu.my/ojs/index.php/JMCS/article/view/6971
+
+Panahi, U., & Abdulvahitoğlu, A. (2026). Ranking multiple antivirus software solutions: A Borda-based MCDM approach to performance evaluation. *Cluster Computing*, *29*, 369. https://doi.org/10.1007/s10586-026-06155-0
+
+Security.org. (2026). *2025 Antivirus Trends, Statistics, and Market Report*. https://www.security.org/antivirus/antivirus-consumer-report-annual/
+
+Sensitivity analysis in multi-criteria decision making: A state-of-the-art research perspective using bibliometric analysis. (2024). *Expert Systems with Applications*, *237*. https://doi.org/10.1016/j.eswa.2023.121660
+
+Shih, H. S., & Olson, D. L. (2022). *TOPSIS and its Extensions: A Distance-Based MCDM Approach*. Springer. https://doi.org/10.1007/978-3-031-09577-1
+
+Velasquez, M., & Hester, P. T. (2013). An analysis of multi-criteria decision making methods. *International Journal of Operations Research*, *10*(2), 56-66.
+
+Weerasinghe, M. (2024). Enhancing web scraping with artificial intelligence: A review. *4th Research Symposium of Faculty of Computing 2024*, General Sir John Kotelawala Defence University.
+
+Yoon, K. (1987). A reconciliation among discrete compromise situations. *Journal of the Operational Research Society*, *38*(3), 277-286.
 
 ---
 
