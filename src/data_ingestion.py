@@ -76,3 +76,41 @@ def filter_by_period(df, test_period):
         Filtered DataFrame.
     """
     return df[df["test_period"] == test_period].copy()
+
+
+def filter_by_year(df, year):
+    """
+    Filter DataFrame by year (e.g. 2025).
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Raw AV-TEST data.
+    year : int
+        Year to filter.
+
+    Returns
+    -------
+    pd.DataFrame
+        Filtered DataFrame.
+    """
+    df["year"] = df["test_period"].str[:4].astype(int)
+    return df[df["year"] == year].copy()
+
+
+def get_available_years(df):
+    """
+    Get list of available years in the dataset.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Raw AV-TEST data.
+
+    Returns
+    -------
+    list
+        List of available years.
+    """
+    df["year"] = df["test_period"].str[:4].astype(int)
+    return sorted(df["year"].unique().tolist())
