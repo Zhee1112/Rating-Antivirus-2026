@@ -24,16 +24,18 @@ class AVTestScraper:
     PLATFORMS = {
         "Windows": {
             "base_url": "home-windows/windows-11/",
-            "years_available": [2025, 2026],
+            "years_available": [2023, 2024, 2025, 2026],
             "months": ["february", "april", "june", "august", "october", "december"],
         },
         "macOS": {
             "base_url": "home-macos/",
             "versions": {
+                2023: "macos-ventura",
+                2024: "macos-sonoma",
                 2025: "macos-sequoia",
                 2026: "macos-tahoe",
             },
-            "years_available": [2025, 2026],
+            "years_available": [2023, 2024, 2025, 2026],
             "months": ["march", "june", "september", "december"],
         },
         "Android": {

@@ -10,7 +10,7 @@ Email: penulis@university.ac.id
 
 ## ABSTRAK
 
-Penilaian terhadap perangkat lunak antivirus merupakan hal yang kritis mengingat meningkatnya ancaman siber di era digital saat ini. Pengguna sering kali mengalami kesulitan dalam memilih produk antivirus yang paling sesuai karena banyaknya pilihan yang tersedia dan perbedaan kriteria penilaian. Penelitian ini mengembangkan sistem penilaian antivirus multi-platform (Windows, macOS, Android) menggunakan metode TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) yang merupakan salah satu metode dalam pendekatan Multi-Criteria Decision Making (MCDM). Data penilaian diperoleh dari AV-TEST Institute yang merupakan lembaga pengujian independen terkemuka melalui proses pengambilan data otomatis (web scraping). Kriteria yang digunakan meliputi Protection (perlindungan), Performance (kinerja), dan Usability (kemudahan penggunaan) dengan pembobotan yang dapat dikonfigurasi. Sistem ini diimplementasikan dalam bahasa pemrograman Python dengan arsitektur modular yang terdiri dari modul ingest data, preprocessing, model TOPSIS, dan visualisasi. Hasil pengujian menunjukkan bahwa metode TOPSIS mampu memberikan perankingan yang konsisten dan dapat diinterpretasikan terhadap 485 data pengujian dari 29+ produk antivirus. Analisis sensitivitas dengan empat skenario pembobotan menunjukkan stabilitas ranking yang baik pada sebagian besar produk. Sistem ini menyediakan kerangka kerja yang terstandarisasi dan objektif untuk evaluasi produk antivirus, sehingga dapat membantu pengguna dalam pengambilan keputusan.
+Penilaian terhadap perangkat lunak antivirus merupakan hal yang kritis mengingat meningkatnya ancaman siber di era digital saat ini. Pengguna sering kali mengalami kesulitan dalam memilih produk antivirus yang paling sesuai karena banyaknya pilihan yang tersedia dan perbedaan kriteria penilaian. Penelitian ini mengembangkan sistem penilaian antivirus multi-platform (Windows, macOS, Android) menggunakan metode TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) yang merupakan salah satu metode dalam pendekatan Multi-Criteria Decision Making (MCDM). Data penilaian diperoleh dari AV-TEST Institute yang merupakan lembaga pengujian independen terkemuka melalui proses pengambilan data otomatis (web scraping). Kriteria yang digunakan meliputi Protection (perlindungan), Performance (kinerja), dan Usability (kemudahan penggunaan) dengan pembobotan yang dapat dikonfigurasi. Sistem ini diimplementasikan dalam bahasa pemrograman Python dengan arsitektur modular yang terdiri dari modul ingest data, preprocessing, model TOPSIS, dan visualisasi. Hasil pengujian menunjukkan bahwa metode TOPSIS mampu memberikan perankingan yang konsisten dan dapat diinterpretasikan terhadap 748 data pengujian dari 29+ produk antivirus. Analisis sensitivitas dengan empat skenario pembobotan menunjukkan stabilitas ranking yang baik pada sebagian besar produk. Sistem ini menyediakan kerangka kerja yang terstandarisasi dan objektif untuk evaluasi produk antivirus, sehingga dapat membantu pengguna dalam pengambilan keputusan.
 
 **Kata Kunci:** TOPSIS, MCDM, Penilaian Antivirus, Keamanan Siber, Pengambilan Keputusan Multi-Kriteria
 
@@ -18,7 +18,7 @@ Penilaian terhadap perangkat lunak antivirus merupakan hal yang kritis mengingat
 
 ## ABSTRACT
 
-Antivirus software evaluation is a critical issue considering the increasing cyber threats in today's digital era. Users often face difficulties in selecting the most suitable antivirus product due to the numerous options available and differing evaluation criteria. This research develops a multi-platform antivirus rating system (Windows, macOS, Android) using the TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) method, which is one of the approaches in Multi-Criteria Decision Making (MCDM). The rating data is obtained from the AV-TEST Institute, a leading independent testing organization, through automated web scraping. The criteria used include Protection, Performance, and Usability with configurable weighting. The system is implemented in Python programming language with a modular architecture consisting of data ingestion, preprocessing, TOPSIS model, and visualization modules. Testing results show that the TOPSIS method is able to provide consistent and interpretable rankings against 485 test data from 29+ antivirus products. Sensitivity analysis with four weighting scenarios demonstrates good ranking stability for most products. This system provides a standardized and objective framework for antivirus product evaluation, thereby assisting users in decision-making.
+Antivirus software evaluation is a critical issue considering the increasing cyber threats in today's digital era. Users often face difficulties in selecting the most suitable antivirus product due to the numerous options available and differing evaluation criteria. This research develops a multi-platform antivirus rating system (Windows, macOS, Android) using the TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution) method, which is one of the approaches in Multi-Criteria Decision Making (MCDM). The rating data is obtained from the AV-TEST Institute, a leading independent testing organization, through automated web scraping. The criteria used include Protection, Performance, and Usability with configurable weighting. The system is implemented in Python programming language with a modular architecture consisting of data ingestion, preprocessing, TOPSIS model, and visualization modules. Testing results show that the TOPSIS method is able to provide consistent and interpretable rankings against 748 test data from 29+ antivirus products. Sensitivity analysis with four weighting scenarios demonstrates good ranking stability for most products. This system provides a standardized and objective framework for antivirus product evaluation, thereby assisting users in decision-making.
 
 **Keywords:** TOPSIS, MCDM, Antivirus Rating, Cybersecurity, Multi-Criteria Decision Making
 
@@ -228,7 +228,7 @@ AV-TEST Institute merupakan salah satu lembaga pengujian independen terkemuka ya
 
 #### 3.2.2 Struktur Data
 
-Dataset terdiri dari 485 data pengujian yang mencakup 29+ produk antivirus di tiga platform. Struktur data ditampilkan pada Tabel 1.
+Dataset terdiri dari 748 data pengujian yang mencakup 29+ produk antivirus di tiga platform. Struktur data ditampilkan pada Tabel 1.
 
 > **Tabel 1: Struktur Dataset AV-TEST**
 >
@@ -261,10 +261,10 @@ Distribusi data pengujian berdasarkan platform ditampilkan pada Tabel 3.
 >
 > | Platform | Jumlah Produk | Periode | Total Data |
 > |----------|---------------|---------|------------|
-> | Windows | 22 | 2025-2026 | 121 |
-> | macOS | 14 | 2025-2026 | 50 |
+> | Windows | 23 | 2023-2026 | 317 |
+> | macOS | 13 | 2023-2026 | 117 |
 > | Android | 29 | 2023-2026 | 314 |
-> | **Total** | **29+** | **2023-2026** | **485** |
+> | **Total** | **29+** | **2023-2026** | **748** |
 
 ### 3.3 Algoritma TOPSIS
 
@@ -393,7 +393,7 @@ Output: Ranked list L with scores
 
 ### 4.1 Hasil Pengujian Sistem
 
-Sistem yang dikembangkan telah diuji menggunakan dataset AV-TEST dengan 485 data pengujian dari 29+ produk antivirus lintas tiga platform. Hasil perankingan TOPSIS dengan pembobotan default ditampilkan pada Tabel 6.
+Sistem yang dikembangkan telah diuji menggunakan dataset AV-TEST dengan 748 data pengujian dari 29+ produk antivirus lintas tiga platform. Hasil perankingan TOPSIS dengan pembobotan default ditampilkan pada Tabel 6.
 
 #### 4.1.1 Perankingan Windows
 
@@ -450,32 +450,36 @@ Sistem yang dikembangkan telah diuji menggunakan dataset AV-TEST dengan 485 data
 
 #### 4.2.1 Windows
 
-> **Tabel 9: Juara Windows per Tahun**
+> **Tabel 9: Juara Windows per Tahun (2023-2026)**
 >
-> | Tahun | Juara | Skor |
-> |-------|-------|------|
-> | 2025 | Kaspersky Premium, McAfee Total Protection, Norton Norton 360, F-Secure Total | 1.0000 |
-> | 2026 | Avast Free Antivirus, Microsoft Defender, Bitdefender, G Data, Protected.net TotalAV, McAfee, Norton, Kaspersky | 1.0000 |
+> | Tahun | Jumlah Produk | Juara (TOP 1) | Skor |
+> |-------|---------------|---------------|------|
+> | 2023 | 21 | Avast Free Antivirus, Kaspersky Standard, Kaspersky Internet Security, G Data Internet Security | 1.0000 |
+> | 2024 | 23 | AhnLab V3 Internet Security, ESET Security Ultimate, Kaspersky Plus | 1.0000 |
+> | 2025 | 20 | Kaspersky Premium, McAfee Total Protection, Norton Norton 360, F-Secure Total | 1.0000 |
+> | 2026 | 17 | Avast Free Antivirus, Bitdefender Total Security, Protected.net TotalAV, Norton, McAfee, Kaspersky, Microsoft Defender | 1.0000 |
 
 #### 4.2.2 macOS
 
-> **Tabel 10: Juara macOS per Tahun**
+> **Tabel 10: Juara macOS per Tahun (2023-2026)**
 >
-> | Tahun | Juara | Skor |
-> |-------|-------|------|
-> | 2025 | AVG Antivirus, Avast Security, Bitdefender, ClamXAV, MacKeeper, Trend Micro, Kaspersky, Norton | 1.0000 |
-> | 2026 | AVG, Avast, Bitdefender, ESET, F-Secure, Intego, Norton, Kaspersky | 1.0000 |
+> | Tahun | Jumlah Produk | Juara (TOP 1) | Skor |
+> |-------|---------------|---------------|------|
+> | 2023 | 12 | AVG Antivirus, Avast Security, Bitdefender, ClamXAV, MacKeeper, Trend Micro, Kaspersky | 1.0000 |
+> | 2024 | 13 | AVG Antivirus, Avast Security, Bitdefender, ClamXAV, F-Secure, Trend Micro, Kaspersky, Norton | 1.0000 |
+> | 2025 | 13 | AVG Antivirus, Avast Security, Bitdefender, ClamXAV, MacKeeper, Trend Micro, Kaspersky, Norton | 1.0000 |
+> | 2026 | 10 | AVG Antivirus, Avast Security, Bitdefender, ESET, Intego, Norton, Kaspersky, F-Secure | 1.0000 |
 
 #### 4.2.3 Android
 
-> **Tabel 11: Juara Android per Tahun**
+> **Tabel 11: Juara Android per Tahun (2023-2026)**
 >
-> | Tahun | Juara | Skor |
-> |-------|-------|------|
-> | 2023 | Antiy AVL, Avast, Bitdefender, securiON OnAV, Norton, Kaspersky, F-Secure, Sophos, Trend Micro | 1.0000 |
-> | 2024 | AhnLab V3, ESET, Bitdefender, Kaspersky, McAfee, Trend Micro, Protected.net | 1.0000 |
-> | 2025 | Kaspersky, ESET, Bitdefender, Sophos, securiON OnAV | 1.0000 |
-> | 2026 | AVG, AhnLab V3, Avast, Avira, Bitdefender, Kaspersky, securiON OnAV, McAfee, Norton, Sophos, Trend Micro | 1.0000 |
+> | Tahun | Jumlah Produk | Juara (TOP 1) | Skor |
+> |-------|---------------|---------------|------|
+> | 2023 | 24 | Antiy AVL, Avast, Bitdefender, F-Secure, Sophos, Trend Micro, Norton, Kaspersky, securiON | 1.0000 |
+> | 2024 | 23 | AhnLab V3, Bitdefender, ESET, Kaspersky, McAfee, Trend Micro, Sophos, Protected.net | 1.0000 |
+> | 2025 | 19 | ESET, Bitdefender, Kaspersky, Sophos, securiON OnAV | 1.0000 |
+> | 2026 | 14 | AVG, AhnLab V3, Avast, Avira, Bitdefender, Kaspersky, securiON, McAfee, Norton, Sophos, Trend Micro | 1.0000 |
 
 ### 4.3 Juara Terbanyak (2023-2026)
 
@@ -483,14 +487,15 @@ Sistem yang dikembangkan telah diuji menggunakan dataset AV-TEST dengan 485 data
 >
 > | Platform | Juara | Kali Juara |
 > |----------|-------|------------|
-> | Windows | Kaspersky Premium | 2 |
-> | Windows | McAfee Total Protection | 2 |
+> | Windows | Kaspersky (various) | 4 |
+> | Windows | Avast Free Antivirus | 2 |
 > | Windows | Norton Norton 360 | 2 |
-> | macOS | AVG Antivirus | 2 |
-> | macOS | Avast Security | 2 |
-> | macOS | Bitdefender Antivirus for Mac | 2 |
-> | macOS | Kaspersky Premium | 2 |
-> | macOS | Norton Norton 360 | 2 |
+> | Windows | McAfee Total Protection | 2 |
+> | macOS | AVG Antivirus | 4 |
+> | macOS | Avast Security | 4 |
+> | macOS | Bitdefender Antivirus for Mac | 4 |
+> | macOS | Kaspersky Premium | 4 |
+> | macOS | Norton Norton 360 | 3 |
 > | Android | Bitdefender Mobile Security | 4 |
 > | Android | securiON OnAV | 3 |
 > | Android | Sophos Intercept X for Mobile | 3 |
@@ -538,7 +543,7 @@ Keterbatasan penelitian meliputi: (1) data diperoleh dari satu sumber saja (AV-T
 
 ### 5.1 Kesimpulan
 
-Penelitian ini mengembangkan sistem penilaian antivirus multi-platform menggunakan metode TOPSIS dengan data dari AV-TEST Institute. Hasil menunjukkan bahwa: (1) sistem berhasil dirancang dengan arsitektur modular dan diuji terhadap 485 data pengujian, (2) TOPSIS efektif untuk perankingan multi-kriteria dengan menghasilkan 10+ juara lintas platform, (3) analisis sensitivitas menunjukkan stabilitas peringkat terhadap perubahan bobot, dan (4) Bitdefender Mobile Security menjadi juara terbanyak di Android dengan 4 kali juara selama 2023-2026.
+Penelitian ini mengembangkan sistem penilaian antivirus multi-platform menggunakan metode TOPSIS dengan data dari AV-TEST Institute. Hasil menunjukkan bahwa: (1) sistem berhasil dirancang dengan arsitektur modular dan diuji terhadap 748 data pengujian, (2) TOPSIS efektif untuk perankingan multi-kriteria dengan menghasilkan 10+ juara lintas platform, (3) analisis sensitivitas menunjukkan stabilitas peringkat terhadap perubahan bobot, dan (4) Bitdefender Mobile Security menjadi juara terbanyak di Android dengan 4 kali juara selama 2023-2026.
 
 ### 5.2 Saran
 
